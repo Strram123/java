@@ -2,24 +2,32 @@ package mypackage;
 
 import java.util.Scanner;
 
-public class Stringdemo {
+public  class Stringdemo {
 
 	public static void main(String[] args) {
 		
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter a string:");
 		String s=sc.nextLine();
-		String s1=s.replaceAll("\\s{2,}", " ").trim();
-		String str=" ";
-		String[] arr=s1.split(" ");
-		for(int i=0;i<arr.length;i++)
+		char[] ch=s.toCharArray();
+		boolean space=true;
+		for(int i=0;i<ch.length;i++)
 		{
-			char c=arr[i].charAt(0);
-			String c1=String.valueOf(c).toUpperCase();
-			String sub=arr[i].substring(1);
-			str=str+c1+sub+" ";
+			if(space)
+			{
+				ch[i]=Character.toUpperCase(ch[i]);
+				space=false;
+			}
+			else
+				space=true;
 		}
-		System.out.println(str.trim());
+		s=String.valueOf(ch);
+		System.out.println(s);
+		
+		
+		
+		
+	} 
 	}
 
-}
+
