@@ -3,11 +3,11 @@ package mypackage;
 public class TypecastDemo {
 
 	public static void main(String[] args) {
-		double d=10.8;
+		double number1=10.8;
 		
-		int i=(int)d;
+		int number2=(int)number1;
 
-		System.out.println(i);	
+		System.out.println(number2);	
 		//String.format("%.2f ", i);
 		
 		
