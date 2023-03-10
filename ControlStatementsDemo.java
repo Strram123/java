@@ -23,7 +23,7 @@ public class ControlStatementsDemo {
 		System.out.println("your percentage:"+percentage);
 		
 		 
-		 Scanner s=new Scanner(System.in);
+	
 		 System.out.println("your percentage 90 to 100 ...press 1");
 		 System.out.println("your percentage 80 to 90 ...press 2");
 		 System.out.println("your percentage 70 to 80 ...press 3");
