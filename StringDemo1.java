@@ -8,8 +8,8 @@ public  class Stringdemo {
 		
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter a string:");
-		String s=sc.nextLine();
-		char[] ch=s.toCharArray();
+		String word=sc.nextLine();
+		char[] ch=word.toCharArray();
 		boolean space=true;
 		for(int i=0;i<ch.length;i++)
 		{
@@ -21,8 +21,8 @@ public  class Stringdemo {
 			else
 				space=true;
 		}
-		s=String.valueOf(ch);
-		System.out.println(s);
+		word=String.valueOf(ch);
+		System.out.println(word);
 		
 		
 		
